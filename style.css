@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'DM Sans';
+}
+
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #00453A;
+}
+
+header p{
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+header p span{
+  font-weight: bold;
+}
+
+.menu-header{
+  display: flex;
+  gap: 35px;
+}
+
+.menu-header a{
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(247, 249, 249, 0.712);
+  text-decoration: none;
+}
+
+.button-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  border: 1px solid rgba(247, 249, 249, 0.712);
+  border-radius: 50px;
+}
+
+.button-header a{
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(247, 249, 249, 0.712);
+}
+
