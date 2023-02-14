@@ -376,11 +376,14 @@ header p span{
 /* FOOTER */
 
 footer{
+  background: rgba(0, 133, 111, 1);
+}
+
+.footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px 100px;
-  background: rgba(0, 133, 111, 1);
 }
 
 .footer-text{
@@ -398,7 +401,6 @@ footer{
 .footer-subtittle p{
   font-size: 14px;
   font-weight: 400;
-
   color: #FFFFFF;
 }
 
@@ -624,7 +626,6 @@ footer{
 
   footer{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     padding:50px 0;
   }
