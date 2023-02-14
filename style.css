@@ -39,10 +39,35 @@ header p span{
 
 .menu-header{
   display: flex;
-  gap: 35px;
+  align-items: center;
+  gap: 260px;
 }
 
-.menu-header a{
+.menu-click{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 35px;
+  height: 35px;
+  opacity: 50%;
+  cursor: pointer;
+  top: 0;
+  left: 90%;
+}
+
+.menu-header svg{
+  display: none;
+  position: absolute;
+  top: 0;
+  left:90%;
+}
+
+
+.menu-header ul{
+  display: flex;
+  gap: 30px;  
+}
+.menu-header ul a{
   font-size: 16px;
   font-weight: 400;
   color: rgba(0, 133, 111, 1);
@@ -385,6 +410,71 @@ footer{
 /* RESPONSIVE */
 
 @media (max-width: 800px){
+  
+  /*Menu Responsive*/
+
+  .menu-click:checked ~ ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 85, 73);
+    padding: 50px 20px;
+    gap: 10px;
+    position: absolute;
+    top: 0%;
+    left: 52%;
+  }
+  
+  .menu-click:checked ~ ul a{
+    color: #FFFFFF;
+    font-size: 24px;
+  }
+  
+  .menu-click:checked ~ .menu-header svg{
+    display: flex;
+  }
+
+  .menu-click{
+    display: flex;
+    position: absolute;
+    top: 4%;
+    left: 88%;
+    z-index: 1000;
+    opacity: 0;
+  }
+  
+  .menu-header svg{
+    display: flex;
+    position: absolute;
+    top: 4%;
+    left: 88%;
+    z-index: 999;
+  }
+
+  .menu-header ul{
+    display: none;
+  }
+
+  .button-header{
+    display: none;
+  }
+
+  header{
+    background-color: rgb(15, 85, 73);
+    padding: 20px ;
+    margin-bottom: 30px;
+  }
+
+  header p {
+    color: #FFFFFF;
+  }
+
+  header p span{
+    color: #FFFFFF;
+  }
+  
+  /* WELCOME */
 
   .welcome{
     padding-bottom: 300px;
@@ -557,7 +647,6 @@ footer{
     flex-direction: column;
     margin-right: 85px;
     gap: 30px;
-
   }
   
 }
