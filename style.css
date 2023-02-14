@@ -13,16 +13,19 @@ body{
 .welcome{
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
   background: #DCE9E2;
   transform: (-1, 0, 0, 1, 0, 0);
+  padding-top: 120px;
 }
 
 header{
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 80px;
+  padding: 30px 80px;
+  gap: 250px;
+  background: #DCE9E2;
 }
 
 header p{
@@ -192,7 +195,6 @@ header p span{
 .statistics-line{
   border: 1px solid rgba(0, 133, 111, 1);
   height: 83px;
-  opacity: 50%;
 }
 
 /* SERVICES */
@@ -421,11 +423,12 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: rgb(15, 85, 73);
-    padding: 50px 20px;
-    gap: 10px;
+    padding: 70px 20px 20px 20px;
+    gap: 15px;
     position: absolute;
     top: 0%;
-    left: 52%;
+    left: 47%;
+    border-bottom-left-radius: 10px;
   }
   
   .menu-click:checked ~ ul a{
@@ -440,8 +443,8 @@ footer{
   .menu-click{
     display: flex;
     position: absolute;
-    top: 4%;
-    left: 88%;
+    top: 20px;
+    left: 83%;
     z-index: 1000;
     opacity: 0;
   }
@@ -449,8 +452,8 @@ footer{
   .menu-header svg{
     display: flex;
     position: absolute;
-    top: 4%;
-    left: 88%;
+    top: 20px;
+    left: 83%;
     z-index: 999;
   }
 
@@ -646,6 +649,12 @@ footer{
   .footer{
     display: flex;
     flex-direction: column;
+    margin-right: 85px;
+    gap: 30px;
+  }
+
+  .social-media{
+    display: flex;
     margin-right: 85px;
     gap: 30px;
   }
